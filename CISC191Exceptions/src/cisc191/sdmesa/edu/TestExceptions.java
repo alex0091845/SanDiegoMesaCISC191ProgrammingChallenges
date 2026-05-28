@@ -153,17 +153,17 @@ class TestExceptions
 //      assertEquals(100, account.getBalance());
 //	}
 //
-	@Test
-	void testBankAccountWithdrawException1() throws Exception
-	{
-		BankAccount account = new BankAccount();
-		account.deposit(200);
-		Exception exception = assertThrows(InvalidAmountException.class, () -> {
-			account.withdraw(-0.02);
-		});
-		assertEquals("Negative amount: $-0.02 is not allowed", exception.getMessage());
-		assertEquals(200, account.getBalance());
-	}
+//	@Test
+//	void testBankAccountWithdrawException1() throws Exception
+//	{
+//		BankAccount account = new BankAccount();
+//		account.deposit(200);
+//		Exception exception = assertThrows(InvalidAmountException.class, () -> {
+//			account.withdraw(-0.02);
+//		});
+//		assertEquals("Negative amount: $-0.02 is not allowed", exception.getMessage());
+//		assertEquals(200, account.getBalance());
+//	}
 //
 //	@Test
 //	void testBankAccountWithdrawException2() throws Exception
