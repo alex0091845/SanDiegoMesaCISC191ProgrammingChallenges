@@ -1,4 +1,4 @@
-package cisc191.sdmesa.edu;
+package edu.sdmesa.cisc191;
 
 /**
  * Lead Author(s):
@@ -18,24 +18,13 @@ package cisc191.sdmesa.edu;
  * Version/date: 
  * 
  * Responsibilities of class:
- * A Unicycle is a Cycle with only one wheel
+ * A a Bicycle is a Cycle with two wheels
  */
 
- // TODO: Implement and comment all IS-A (inheritance) relationships
- 
-public class Unicycle extends Cycle
+// TODO: Implement and comment all IS-A (inheritance) and IS (implements) relationships separately
+
+public class Bicycle
 {
 	// TODO: Implement and comment HAS-A relationships separately
-	
-	/**
-	 * Purpose: 
-	 * @param string
-	 */
-	public Unicycle(String newMake)
-	{
-		// TODO Auto-generated constructor stub
-		super(newMake);
-		
-	}
-	
+
 }

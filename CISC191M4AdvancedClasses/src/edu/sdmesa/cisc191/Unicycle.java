@@ -1,4 +1,4 @@
-package cisc191.sdmesa.edu;
+package edu.sdmesa.cisc191;
 
 /**
  * Lead Author(s):
@@ -17,14 +17,25 @@ package cisc191.sdmesa.edu;
  *  
  * Version/date: 
  * 
- * Responsibilities of interface:
- * 
+ * Responsibilities of class:
+ * A Unicycle is a Cycle with only one wheel
  */
-public interface Gearable
+
+ // TODO: Implement and comment all IS-A (inheritance) relationships
+ 
+public class Unicycle extends Cycle
 {
+	// TODO: Implement and comment HAS-A relationships separately
+	
 	/**
-	 * 
-	 * @return the gear that object is currently in
+	 * Purpose: 
+	 * @param string
 	 */
-	int getGear();
+	public Unicycle(String newMake)
+	{
+		// TODO Auto-generated constructor stub
+		super(newMake);
+		
+	}
+	
 }

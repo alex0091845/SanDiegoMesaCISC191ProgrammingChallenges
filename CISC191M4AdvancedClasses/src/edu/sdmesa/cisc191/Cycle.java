@@ -1,4 +1,4 @@
-package cisc191.sdmesa.edu;
+package edu.sdmesa.cisc191;
 
 import java.awt.Color;
 

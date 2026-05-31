@@ -1,4 +1,4 @@
-package cisc191.sdmesa.edu;
+package edu.sdmesa.cisc191;
 
 /**
  * Lead Author(s):
@@ -18,13 +18,11 @@ package cisc191.sdmesa.edu;
  * Version/date: 
  * 
  * Responsibilities of class:
- * A a Bicycle is a Cycle with two wheels
+ * 
  */
-
-// TODO: Implement and comment all IS-A (inheritance) and IS (implements) relationships separately
-
-public class Bicycle
+/**
+ */
+public interface Movable
 {
-	// TODO: Implement and comment HAS-A relationships separately
 
 }

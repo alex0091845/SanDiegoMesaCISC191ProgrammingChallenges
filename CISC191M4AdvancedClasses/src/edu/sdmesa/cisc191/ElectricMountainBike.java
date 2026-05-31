@@ -1,4 +1,4 @@
-package cisc191.sdmesa.edu;
+package edu.sdmesa.cisc191;
 
 /**
  * Lead Author(s):
@@ -18,11 +18,14 @@ package cisc191.sdmesa.edu;
  * Version/date: 
  * 
  * Responsibilities of class:
- * 
+ * ElectricMountainBike is a Bicyle that is Movable, Gearable, and Electric
  */
-/**
- */
-public interface Movable
-{
 
+// TODO: Implement and comment all IS-A (inheritance) and IS (implements) relationships separately
+
+public class ElectricMountainBike
+{
+	// TODO: Implement and comment each HAS-A relationships separately
+	
+	
 }
