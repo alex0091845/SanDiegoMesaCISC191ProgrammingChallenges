@@ -3,8 +3,9 @@
  */
 package edu.sdmesa.cisc191.grader.view;
 
-import java.awt.Dimension;
+import java.awt.Color;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -36,11 +37,19 @@ import edu.sdmesa.cisc191.grader.model.LearningOutcome;
 public class LearningOutcomeComboBox extends JPanel
 {
 	private final JComboBox<Achievement> comboBox = new JComboBox<Achievement>(Achievement.values());
+	
 	public LearningOutcomeComboBox(GradeView gradeView, LearningOutcome learningOutcome)
 	{
+		if (learningOutcome.ordinal() % 2 == 1)
+		{
+			Color backgroundColor = new Color(250, 250, 250);
+			setBackground(backgroundColor);
+			comboBox.setBackground(backgroundColor);
+		}
 		String labelString = learningOutcome.toString() + ": " + learningOutcome.getTitle();
 		JLabel label = new JLabel(labelString);
 		label.setLabelFor(comboBox);
+		label.setFont(new Font("Dialog", Font.BOLD, 13));
 		
 		setLayout(new FlowLayout(FlowLayout.RIGHT));
 		add(label);

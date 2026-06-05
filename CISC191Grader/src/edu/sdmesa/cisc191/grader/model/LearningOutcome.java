@@ -18,24 +18,29 @@ package edu.sdmesa.cisc191.grader.model;
  */
 public enum LearningOutcome
 {
-	LO2("M2 Arrays"),
-	LO3("M3 Beginning Classes"),
-	LO4("M4 Advanced Classes"),
-	LO5("M5 Generic Collections"),
-	LO1("M6 Object Oriented Design"),
-	LO6("M7 GUI"),
-	LO7("M8 Exceptions"),
-	LO8("M9 File I/O"),
-	LO9("M10 Recursion");
+	LO2("Arrays", 2),
+	LO3("Beginning Classes", 3),
+	LO4("Advanced Classes", 4),
+	LO5("Generic Collections", 5),
+	LO1("Object Oriented Design", 6),
+	LO6("GUI", 7),
+	LO7("Exceptions", 8),
+	LO8("File I/O", 9),
+	LO9("Recursion", 10);
 	
 	// A learning outcome has a title for presentation
 	private final String title;
+	
+	// A learning outcome has a module number
+	private final int moduleNumber;
+	
 	// A learning outcome has an level of achievement
 	private Achievement achievement;
 	
-	LearningOutcome(String initialTitle)
+	LearningOutcome(String initialTitle, int initialModuleNumber)
 	{
 		title = initialTitle;
+		moduleNumber = initialModuleNumber;
 		setAchievement(Achievement.NOT_YET);
 	}
 
@@ -54,6 +59,9 @@ public enum LearningOutcome
 		achievement = newAchievement;
 	}
 	
-	
+	public String toString()
+	{
+		return "M" + moduleNumber + ": " + name();
+	}
 
 }

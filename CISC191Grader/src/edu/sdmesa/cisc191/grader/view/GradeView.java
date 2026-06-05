@@ -53,8 +53,8 @@ public class GradeView extends JFrame
 		setLayout(new FlowLayout());
 		
 		JPanel inputPanel = new JPanel();
-		inputPanel.setLayout(new GridLayout(grader.getLearningOutcomes().length, 1));
-		inputPanel.setBorder(BorderFactory.createTitledBorder("Achievement Levels"));
+		inputPanel.setLayout(new GridLayout(grader.getLearningOutcomes().length, 1, 0, 1));
+		inputPanel.setBorder(BorderFactory.createTitledBorder("Achievement Levels")); 
 		for (LearningOutcome outcome : grader.getLearningOutcomes())
 		{
 			LearningOutcomeComboBox box = new LearningOutcomeComboBox(this, outcome);
@@ -98,7 +98,7 @@ public class GradeView extends JFrame
 		});
 		
 		JPanel outputPanel = new JPanel();
-		outputPanel.setLayout(new GridLayout(3, 1, 0, 5));
+		outputPanel.setLayout(new GridLayout(3, 1, 0, 10));
 		outputPanel.add(currentGradePanel);
 		outputPanel.add(finalGradePanel);
 		outputPanel.add(resetButton);
